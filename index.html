@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
     <link rel="stylesheet" href="./styles/output.css">
     <title>Dev Burguer</title>
 </head>
@@ -151,7 +155,7 @@
     <!--FIM MENU-->
 
     <!--MODAL-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Seu Carrinho</h2>
@@ -178,7 +182,7 @@
     <footer
         class="bg-red-600 w-full py-2 flex justify-center fixed bottom-0 z-40 rounded-t-lg text-white font-bold items-center gap-2 id-cart-btn">
         <button>
-            (<span id="cart-count">2</span>)
+            (<span id="cart-count">0</span>)
             Veja meu carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
