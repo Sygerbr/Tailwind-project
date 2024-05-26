@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./styles/output.css">
     <title>Dev Burguer</title>
@@ -155,7 +155,8 @@
     <!--FIM MENU-->
 
     <!--MODAL-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+    <div id="cart-modal"
+        class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Seu Carrinho</h2>
@@ -169,8 +170,8 @@
                 class="w-full border-2 p-1 rounded my-1" />
             <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo!</p>
             <div class="flex items-center justify-between w-full">
-                <button id="close-modal">Fechar</button>
-                <button id="checkout-bnt" class="bg-green-500 text-white rounded px-4 py-1">Finalizar pedido</button>
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white rounded px-4 py-1">Finalizar pedido</button>
             </div>
 
         </div>
@@ -179,8 +180,8 @@
     <!--FIM MODAL-->
 
     <!--BUTTON CART FOOTER-->
-    <footer
-        class="bg-red-600 w-full py-2 flex justify-center fixed bottom-0 z-40 rounded-t-lg text-white font-bold items-center gap-2 id-cart-btn">
+    <footer id="cart-btn"
+        class="bg-red-600 w-full py-2 flex justify-center fixed bottom-0 z-40 rounded-t-lg text-white font-bold items-center gap-2">
         <button>
             (<span id="cart-count">0</span>)
             Veja meu carrinho
@@ -190,6 +191,7 @@
     <!--FIM BUTTON CART FOOTER-->
 
     <script src="https://kit.fontawesome.com/4c77247ac1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
